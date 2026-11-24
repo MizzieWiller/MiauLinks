@@ -2,7 +2,7 @@
 
 Aplicação web 😺 que transforma um link comprido em um link curtinho 🔗. Você cola o endereço, o gatinho devolve o link curto ✂️, e quem abrir o link curto é levado ao site original 🚀.
 
-🔗 **Site online:** `https://miaulinks.netlify.app/` 
+🔗 **Site online:** (https://miaulinks.netlify.app/) 
 🐙 **Repositório:** https://github.com/MizzieWiller/MiauLinks
 
 > 🎓 Projeto da atividade de **Documentação de Software** (Fatec, disciplina de Sistemas Operacionais).
