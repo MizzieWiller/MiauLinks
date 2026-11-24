@@ -25,7 +25,8 @@ const notFoundPage = `<!doctype html>
 
 export default async (req, context) => {
   const code = String(context.params?.code ?? "").toLowerCase();
-  const record = code ? await getStore("links").get(code, { type: "json" }) : null;
+  const store = getStore({ name: "links", consistency: "strong" });
+  const record = code ? await store.get(code, { type: "json" }) : null;
 
   if (!record?.url) {
     return new Response(notFoundPage, {
