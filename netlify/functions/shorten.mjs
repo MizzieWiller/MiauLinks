@@ -25,7 +25,7 @@ export default async (req) => {
   const aliasCheck = normalizeAlias(body?.alias);
   if (!aliasCheck.ok) return json({ error: aliasCheck.error }, 400);
 
-  const store = getStore("links");
+  const store = getStore({ name: "links", consistency: "strong" });
   let code = aliasCheck.alias;
 
   if (code) {
